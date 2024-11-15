@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    background-color: #f5f5dc;
+}
+h1{
+    padding-left: 50px;
+    font-family:serif;
+    font-style: italic;
+}
+p{
+    margin: 20px;
+    font-weight: bolder;
+}
+.square{
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.all-box{
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+
+    /* transition */
+    transform: rotate(-40deg);
+
+    transition: transform 0.2s ease;
+align-content: center;
+}
+
+.all-box:hover{
+    background-color: darkcyan;
+    border-radius: 40px;
+transition: linear ease-in 0.5s;
+    /* transition */
+    
+    transform: translateX(100px);
+    /* transition */
+
+}
+
+/* .all-box{
+    background-color: blue;
+} */
+.rectangle{
+    margin: 40px;
+    padding: 50px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    row-gap:50px ;
+    /* justify-content: ; */
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.all-cube{
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    /* justify-content: ; */
+}
+/* .all-cube::after{
+    content: "OK";
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 10px;
+} */
+.all-cube::before{
+    content:"Grid";
+    position: absolute;
+    padding-left:10px;
+    padding-top: 13px;
+    
+}
+.all-cube:hover{
+    background-color: #94c9f7;
+    border-radius: 40px;
+    transition: ease-in .4s;
+    transform: rotate(180deg);
+    box-shadow: 5px 5px 5px 5px;
+}
+
+/* *******************
+
+.special{
+       
+} */
+
+.separate-box{
+    margin: 10px;
+    height: 60px;
+    width: 60px; 
+    background-color: #94c9f7;
+    border: 2px solid black;
+    transition: transform 2s;
+
+}
+.separate-box:hover{
+    /* transition: linear ease-in 5s; */
+    transform: translateX(500px);
+}
